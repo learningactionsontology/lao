@@ -1,785 +1,951 @@
 <?xml version="1.0"?>
-<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+<rdf:RDF xmlns="http://www.mathisis-project.eu/lao"
      xml:base="http://www.mathisis-project.eu/lao"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.mathisis-project.eu/lao">
-    <Prefix name="" IRI="http://www.semanticweb.org/dorothea/ontologies/2016/2/untitled-ontology-81"/>
-    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Projector"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasSensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_exercise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Inertial_unit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Stereo_microphone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Visual_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Microphone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Motor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_exercise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#IWB"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moving_robot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playing_action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material_identifier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Classroom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Speaker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor_positioning"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_code"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#QRCode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#With_learning_disabilities"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#URL"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Auditorium"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playback_action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sonar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audiovisual_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Standard_learner"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#move"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Passive_Audiovisual_Agent"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#playback"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Video"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Position_sensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Tactile_sensor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#select"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Home"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Living_room"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#realisedByMaterial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#With_physical_disabilities"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#display"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_motion"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Tablet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Movement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_activity_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Image"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sound"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_Environment"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_player"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Displaying_action"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Lab"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_material"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Transitive_movement"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Filename"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_game"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Laptop"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#play"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Barcode"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#RFID"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Executing_action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Activity_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Workplace"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_robot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learners_room"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#solve"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Vibration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#IR_camera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Context"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Contact_sensor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_positioning"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moveable_activity_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Force_sensitive_resistor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Smartphone"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Stereo_camera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_game"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasTrustScore"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Smart_TV"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_code"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Open_air_establishment"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasIdentifier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Camera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#RGB_camera"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Mobile_agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Infrared"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Presentation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Conventional_TV"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#PC"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#School"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_object"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Activity_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_Environment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_player"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audiovisual_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Auditorium"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Barcode"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_code"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Camera"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Classroom"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Contact_sensor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Conventional_TV"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Passive_Audiovisual_Agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_code"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material_identifier"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_exercise"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_game"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_object"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Displaying_action"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_Environment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Executing_action"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Filename"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_code"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_activity_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Activity_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_robot"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_activity_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Force_sensitive_resistor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Home"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#IR_camera"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Camera"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#IWB"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Image"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Inertial_unit"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Infrared"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Lab"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Laptop"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Context"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learners_room"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_Environment"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Context"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Living_room"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Area"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Microphone"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Mobile_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Motor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moveable_activity_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Activity_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Movement"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moving_robot"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moveable_activity_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Open_air_establishment"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#PC"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Passive_Audiovisual_Agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_code"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material_identifier"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_exercise"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_game"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_material"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_object"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playback_action"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playing_action"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Position_sensor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Presentation"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Projector"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Visual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#QRCode"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_code"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#RFID"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_code"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#RGB_camera"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Camera"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#School"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_motion"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Movement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_positioning"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_motion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_positioning"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Moveable_activity_agent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor_positioning"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_motion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor_positioning"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Fixed_activity_agent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Smart_TV"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Interactive_audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Smartphone"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Mobile_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sonar"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sound"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Speaker"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Standard_learner"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Stereo_camera"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Camera"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Stereo_microphone"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Microphone"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Tablet"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Mobile_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Tactile_sensor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Transitive_movement"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Movement"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#URL"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_code"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Vibration"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Self_motion"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Vibration"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Mobile_agent"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Video"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_material"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Visual_agent"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#With_learning_disabilities"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#With_physical_disabilities"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Workplace"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Establishment"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectIntersectionOf>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Infrared"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#RGB_camera"/>
-        </ObjectIntersectionOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#IR_camera"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectUnionOf>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audio_agent"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Visual_agent"/>
-        </ObjectUnionOf>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Audiovisual_agent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#play"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Digital_game"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playing_action"/>
-    </SubClassOf>
-    <SubClassOf>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#play"/>
-            <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Physical_game"/>
-        </ObjectSomeValuesFrom>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Playing_action"/>
-    </SubClassOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#display"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#move"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#play"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#playback"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#select"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#solve"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#realisedByMaterial"/>
-    </InverseObjectProperties>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasIdentifier"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasSensor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#move"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_action"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasActuator"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasIdentifier"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material_identifier"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasSensor"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Sensor"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#move"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#move"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.mathisis-project.eu/learningactionsontology#performAction"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learning_material"/>
-    </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasTrustScore"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Actuator"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasTrustScore"/>
-        <Class IRI="http://www.mathisis-project.eu/learningactionsontology#Learner"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="http://www.mathisis-project.eu/learningactionsontology#hasTrustScore"/>
-        <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.mathisis-project.eu/learningactionsontology#Actuator</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Platform Agent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.mathisis-project.eu/learningactionsontology#Open_air_establishment</IRI>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any outdoor space, trasportation means etc</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.mathisis-project.eu/learningactionsontology#Self_motion</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Movement caused by oneself or itself, not by an external action or agent. The property of motion being inherent in a particular entity, being.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.mathisis-project.eu/learningactionsontology#Transitive_movement</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any movement in which physical (or digital) objects are employed.</Literal>
-    </AnnotationAssertion>
-</Ontology>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.mathisis-project.eu/lao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#actuates -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#actuates">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#display -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#display">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#executes">
+        <owl:inverseOf rdf:resource="http://www.mathisis-project.eu/lao#materialises"/>
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#hasActuator -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#hasActuator">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learning_Environment"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#hasIdentifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#hasIdentifier">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Learning_material_identifier"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#hasSensor">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#materialises -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#materialises"/>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#move -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#move">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#performableBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#performableBy">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+        <rdfs:range rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#play -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#play">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#playback -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#playback">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#select -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#select">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#solve -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#solve">
+        <rdfs:subPropertyOf rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#hasTrustScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.mathisis-project.eu/lao#hasTrustScore">
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+        <rdfs:domain rdf:resource="http://www.mathisis-project.eu/lao#Learner"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Activity_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Activity_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Actuator -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Actuator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#actuates"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#hasSensor"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Platform Agent</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Area -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Area">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Audio_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Audio_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Audio_player -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Audio_player">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Audio_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Audiovisual_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Audiovisual_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Auditorium -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Auditorium">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Barcode -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Barcode">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Camera -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Classroom -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Classroom">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Contact_sensor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Contact_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Context -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Context"/>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Conventional_TV -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Conventional_TV">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Passive_Audiovisual_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Digital_code -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Digital_code">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_material_identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Digital_exercise -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Digital_exercise">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Digital_game -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Digital_game">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Digital_material -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Digital_material">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Digital_object -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Digital_object">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Displaying_action -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Displaying_action">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Establishment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Establishment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Executing_action -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Executing_action">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Filename -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Filename">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Fixed_activity_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Fixed_activity_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Activity_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Fixed_robot -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Fixed_robot">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Fixed_activity_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Force_sensitive_resistor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Force_sensitive_resistor">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Home -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Home">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#IR_camera -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#IR_camera">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#IWB -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#IWB">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Image -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Image">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Inertial_unit -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Inertial_unit">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Infrared -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Infrared">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Lab -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Lab">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Laptop -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Laptop">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learner -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learner">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learners_room -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learners_room">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learning_Environment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learning_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Context"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#hasActuator"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learning_action -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learning_action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#executes"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learning_material -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learning_material">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#hasIdentifier"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Learning_material_identifier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#materialises"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#performableBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learning_material_identifier -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learning_material_identifier"/>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Living_room -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Living_room">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Microphone -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Microphone">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Mobile_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Mobile_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Motor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Motor">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Moveable_activity_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Moveable_activity_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Activity_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Movement -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Movement">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Moving_robot -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Moving_robot">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Moveable_activity_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Open_air_establishment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Open_air_establishment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
+        <rdfs:comment>Any outdoor space, trasportation means etc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#PC -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#PC">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Passive_Audiovisual_Agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Passive_Audiovisual_Agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Physical_code -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Physical_code">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_material_identifier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Physical_exercise -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Physical_exercise">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Physical_game -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Physical_game">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Physical_material -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Physical_material">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Physical_object -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Physical_object">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Playback_action -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Playback_action">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Playing_action -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Playing_action">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Position_sensor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Position_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Presentation -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Presentation">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Projector -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Projector">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Visual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#QRCode -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#QRCode">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#RFID -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#RFID">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#RGB_camera -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#RGB_camera">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#School -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#School">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Self_motion -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Self_motion">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Movement"/>
+        <rdfs:comment xml:lang="en">Movement caused by oneself or itself, not by an external action or agent. The property of motion being inherent in a particular entity, being.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Self_positioning -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Self_positioning">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Self_motion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#actuates"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Moveable_activity_agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Sensor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Sensor"/>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Sensor_positioning -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Sensor_positioning">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Self_motion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#actuates"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Fixed_activity_agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Smart_TV -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Smart_TV">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Smartphone -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Smartphone">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Mobile_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Sonar -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Sonar">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Sound -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Sound">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Standard_learner -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Standard_learner">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Stereo_camera -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Stereo_camera">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Stereo_microphone -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Stereo_microphone">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Microphone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Tablet -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Tablet">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Mobile_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Tactile_sensor -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Tactile_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Transitive_movement -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Transitive_movement">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Movement"/>
+        <rdfs:comment xml:lang="en">Any movement in which physical (or digital) objects are employed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#URL -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#URL">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Vibration -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Vibration">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Self_motion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#actuates"/>
+                <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Mobile_agent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Video -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Video">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Visual_agent -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Visual_agent">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#With_learning_disabilities -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#With_learning_disabilities">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#With_physical_disabilities -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#With_physical_disabilities">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Workplace -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Workplace">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.mathisis-project.eu/lao#Infrared"/>
+            <rdf:Description rdf:about="http://www.mathisis-project.eu/lao#RGB_camera"/>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#IR_camera"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#materialises"/>
+                <owl:someValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Learning_action"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#performableBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+            </owl:Restriction>
+        </owl:intersectionOf>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_material"/>
+    </owl:Class>
+    <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.mathisis-project.eu/lao#Audio_agent"/>
+            <rdf:Description rdf:about="http://www.mathisis-project.eu/lao#Visual_agent"/>
+        </owl:unionOf>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Audiovisual_agent"/>
+    </owl:Class>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#play"/>
+        <owl:someValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Digital_game"/>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Playing_action"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#play"/>
+        <owl:someValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Physical_game"/>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Playing_action"/>
+    </owl:Restriction>
+</rdf:RDF>
 
 
 
