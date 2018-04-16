@@ -57,6 +57,12 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#hasCollaboratingStyle -->
+
+    <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#hasCollaboratingStyle"/>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#hasIdentifier -->
 
     <owl:ObjectProperty rdf:about="http://www.mathisis-project.eu/lao#hasIdentifier">
@@ -193,10 +199,34 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Android -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Android">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Operating_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Application_name -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Application_name">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_code"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Area -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Area">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Environment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Audio -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes"/>
     </owl:Class>
     
 
@@ -257,6 +287,14 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Collaborating_style -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Collaborating_style">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Context"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Contact_sensor -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Contact_sensor">
@@ -267,7 +305,14 @@
 
     <!-- http://www.mathisis-project.eu/lao#Context -->
 
-    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Context"/>
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Context">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.mathisis-project.eu/lao#hasCollaboratingStyle"/>
+                <owl:someValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Collaborating_style"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -275,6 +320,22 @@
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Conventional_TV">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Passive_Audiovisual_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Cooperative -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Cooperative">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Collaborating_style"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Desktop-Laptop -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Desktop-Laptop">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
     </owl:Class>
     
 
@@ -375,6 +436,22 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Global_disability -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Global_disability">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Hearing_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Hearing_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Global_disability"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Home -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Home">
@@ -439,14 +516,6 @@
     
 
 
-    <!-- http://www.mathisis-project.eu/lao#Laptop -->
-
-    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Laptop">
-        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.mathisis-project.eu/lao#Learner -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learner">
@@ -473,6 +542,14 @@
                 <owl:allValuesFrom rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Technical_context"/>
     </owl:Class>
     
 
@@ -521,10 +598,34 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Linux -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Linux">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Operating_system"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Living_room -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Living_room">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Area"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#MacOS -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#MacOS">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Operating_system"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Marker -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Marker">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_code"/>
     </owl:Class>
     
 
@@ -541,6 +642,22 @@
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Mobile_agent">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Interactive_audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Mobility_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Mobility_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Global_disability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Motion -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes"/>
     </owl:Class>
     
 
@@ -577,11 +694,27 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#NAOMark -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#NAOMark">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Marker"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Open_air_establishment -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Open_air_establishment">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
         <rdfs:comment>Any outdoor space, trasportation means etc</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Operating_system -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Operating_system">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Technical_context"/>
     </owl:Class>
     
 
@@ -598,6 +731,22 @@
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Passive_Audiovisual_Agent">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Audiovisual_agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Peer-to-peer -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Peer-to-peer">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Collaborating_style"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Peer-tutoring -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Peer-tutoring">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Collaborating_style"/>
     </owl:Class>
     
 
@@ -682,6 +831,15 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#QDID -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#QDID">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Physical_code"/>
+        <rdfs:comment xml:lang="en">Qualified Design Identification, used by Bluetooth broadcasters, such as Beacons</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#QRCode -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#QRCode">
@@ -702,6 +860,22 @@
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#RGB_camera">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Reading -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Reading">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Vision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Reading_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Reading_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Visual_impairment"/>
     </owl:Class>
     
 
@@ -789,6 +963,22 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Speech -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Speech">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Speech_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Speech_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Global_disability"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Standard_learner -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Standard_learner">
@@ -821,10 +1011,34 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Tactile_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Tactile_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Global_disability"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Tactile_sensor -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Tactile_sensor">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Technical_context -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Technical_context">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Context"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Touch -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Touch">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes"/>
     </owl:Class>
     
 
@@ -838,10 +1052,18 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#URI -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#URI">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_code"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#URL -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#URL">
-        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Digital_code"/>
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#URI"/>
     </owl:Class>
     
 
@@ -868,10 +1090,34 @@
     
 
 
+    <!-- http://www.mathisis-project.eu/lao#Vision -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Vision">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Learning_Material_interaction_attributes"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.mathisis-project.eu/lao#Visual_agent -->
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Visual_agent">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Visual_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Visual_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Global_disability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Windows -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Windows">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Operating_system"/>
     </owl:Class>
     
 
@@ -896,6 +1142,30 @@
 
     <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Workplace">
         <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Establishment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Writing -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Writing">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Motion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#Writing_impairment -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#Writing_impairment">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Mobility_impairment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.mathisis-project.eu/lao#iOS -->
+
+    <owl:Class rdf:about="http://www.mathisis-project.eu/lao#iOS">
+        <rdfs:subClassOf rdf:resource="http://www.mathisis-project.eu/lao#Operating_system"/>
     </owl:Class>
     
 
